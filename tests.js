@@ -34,6 +34,16 @@ describe('helloWorld', function() {
         it('should return input', function () {
             expect(sayHello('input')).toBe('Hello, ' + input + '!');
         });
+        it('should return "Hello, World!"', function () {
+            expect(sayHello('input')).toBe('Hello, World!');
+        });
+        it('should return "true"', function () {
+            expect(sayHello('true')).toBe('Hello, World!');
+        });
+        it('should return "false"', function () {
+            expect(sayHello('false')).toBe('Hello, World!');
+        });
+
     });
 
 
