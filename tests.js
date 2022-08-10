@@ -24,3 +24,17 @@ describe('sayHello', function() {
         expect(typeof sayHello()).toBe('string');
     });
 });
+
+describe('sayHello', function() {
+    it('should return Hello, Jane!', function () {
+        expect(sayHello('Jane')).toBe('Hello, Jane!');
+    });
+});
+
+describe('sayHello', function() {
+    it('should return Hello, Alex!', function () {
+        expect(sayHello('Alex')).toBe('Hello, Alex!');
+    });
+});
+
+
